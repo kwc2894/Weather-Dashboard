@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Links-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!--css>-->
+    <link rel='stylesheet' type='text/css' href='assets/style.css'>
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <span class='text-center'> Weather Dashboard</span>
+    </nav>
+
+    <!-- Main container -->
+    <div class=' main-container container-fluid'>
+        <div class='row'>
+
+             <!--Search for a city-->
+            <div id="search-section">
+                    <div class="card-body">
+                        <h5>Search for a city:</h5>
+                            <form>
+                                <input type="search" placeholder="Enter city name" id="search4Cities"class="input form-control mr-sm-2" />
+                                <button class="btn" type="submit">
+                                    Search
+                                </button>
+                            </form>               
+                        
+                            <div class="cities-list"></div>
+                    </div>
+
+            </div>
+         
+             <!--Container for weather columns-->
+                <div class="col-md-8 container-left-columns">
+                    <!--Current city-->
+                    <div class="row">
+                        <div class="card card-city">
+                            <div class="card-body">
+                                <div class="curCity"></div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!--5 Day Forecast Title-->
+                    <div class="row">
+                        <div class="forecast-title">
+                            <div class="cbforecast">
+                                <h5>5-Day Forecast:</h5>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!--5 Day Forecast Days-->
+                    <div class="row gutters">
+                        <!--Day 1-->
+                            <div class="col">
+                                <div class="card forecast-day">
+                                    <div class="holder">
+                                        <div class="day1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--Day 2-->
+                            <div class="col">
+                                <div class="card forecast">
+                                  <div class="holder">
+                                      <div class="day2"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <!-- Day 3-->
+                            <div class="col">
+                                <div class="card forecast">
+                                  <div class="holder">
+                                      <div class="day3"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <!--Day 4-->
+                            <div class="col">
+                                <div class="card forecast">
+                                  <div class="holder">
+                                      <div class="day4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card forecast">
+                                  <div class="holder">
+                                      <div class="day5"></div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+    </div>
+</div>
+</body>
+<script src='assets/script.js'></script>
+</html>
