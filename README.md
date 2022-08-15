@@ -30,7 +30,7 @@ THEN I am again presented with current and future conditions for that city
 
 ## Screenshot
 
-![GeneratorScreen]()
+![GeneratorScreen](https://github.com/kwc2894/Weather-Dashboard/blob/main/assets/Screen%20Shot%202022-08-15%20at%206.55.41%20PM.png)
 
 ## Deployed page
 
