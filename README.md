@@ -34,5 +34,5 @@ THEN I am again presented with current and future conditions for that city
 
 ## Deployed page
 
-Page published at: 
+Page published at: https://kwc2894.github.io/Weather-Dashboard/
 
