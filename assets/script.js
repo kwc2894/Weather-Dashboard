@@ -4,6 +4,7 @@ var apiKey = '&appid=cdfd988711c5e45cb4fa89bc12acf0e7';
 
 var inputEl = document.querySelector('.input');
 var searchBtnEl = document.querySelector('.btn');
+var clearBtnEl = document.querySelector('.clrbtn');
 var citiesListEl = document.querySelector(".cities-list");
 var currentCity = document.querySelector(".curCity")
 var dayOf = document.querySelector(".dayof");
@@ -211,7 +212,6 @@ function checkinput(){
 
 
 
-
-
 // Event Listener for search button
 searchBtnEl.addEventListener('click', recordCityData);
+clearBtnEl.addEventListener('click', localStorage.clear);
