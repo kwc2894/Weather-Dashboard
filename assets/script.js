@@ -12,7 +12,9 @@ var day2EL = document.querySelector(".day2");
 var day3EL = document.querySelector(".day3");
 var day4EL = document.querySelector(".day4");
 var day5EL =document.querySelector(".day5");
+var colEL = document.querySelector(".headcol");
 var listofCities = [];
+
 
 
 // gets the cityName in localStorage and sets it to the variable
@@ -33,6 +35,7 @@ $.ajax ({
 })
     .then(function(response) {
 
+        checkinput();
         // adds the CURRENT weather to the top of the page
         var cityvar = document.createElement("h2");
         cityvar.append(response.name + " " + "(" + datenum + ")");
@@ -190,14 +193,20 @@ $.ajax ({
     });
     // Sets the input value in localStorage
 function recordCityData() {
-    listofCities.push(inputEl.value);
+    var histEl = document.createElement("p");
     console.log(listofCities);
     localStorage.setItem("cityName", inputEl.value);
+    histEl.append(inputEl.value);
     for (var i = 0; i < localStorage.length; i++) {
-        var tag = document.createElement("p");
-        tag.append(localStorage.getItem(localStorage.key(i)))
-        citiesListEl.appendChild(tag);
+        hidstorydivEl.appendChild(histEl);
         }
+}
+
+function checkinput(){
+    if (localStorage.length == 0){
+        var historydivEL = document.createElement(".historydiv");
+        colEL.appendChild(historydivEL);
+    }
 }
 
 

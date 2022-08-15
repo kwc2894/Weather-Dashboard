@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Links-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <!--css>-->
     <link rel='stylesheet' type='text/css' href='assets/style.css'>
     <title>Weather Dashboard</title>
 </head>
@@ -21,7 +19,7 @@
     <!-- Main container -->
     <div class=' main-container container-fluid'>
         <div class='row'>
-
+            <div class="headcol">
              <!--Search for a city-->
             <div id="search-section">
                     <div class="card-body">
@@ -32,11 +30,10 @@
                                     Search
                                 </button>
                             </form>               
-                        
                             <div class="cities-list"></div>
                     </div>
-
             </div>
+        </div>
          
              <!--Container for weather columns-->
                 <div class="col-md-8 container-left-columns">
